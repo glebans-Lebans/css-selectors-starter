@@ -442,7 +442,8 @@ select {
     select all of the inputs on focus (by tag name/pseudo-class) on the page
 */
 /* ----- */
-/* --Note from Grant-- It seems like this section should be just "input"*/
+/* --Note from Grant-- This rule appears to be overwritten by the next because the directions for both rules ask for the same thing. 
+It seems like this section should be "input:invalid" to show an empty/incorrect field entry based on the solution image. */
 input:focus { 
     outline: 4px solid var(--orange);
     outline-offset: 2px;
@@ -780,7 +781,7 @@ caption {
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-tr:nth-of-type(odd) { 
+tbody tr:nth-of-type(odd) { 
     background-color: var(--dv-orange);
 }
 
